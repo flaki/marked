@@ -1,7 +1,7 @@
-import { escape } from './util';
-import Renderer from './renderer';
-import inline from './grammar/inline';
 import marked from './marked';
+import { escape } from './util.js';
+import Renderer from './renderer.js';
+import inline from './grammar/inline.js';
 
 export const rules = inline;
 

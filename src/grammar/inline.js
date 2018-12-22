@@ -1,5 +1,5 @@
-import { edit, noop } from '../util';
-import block from './block';
+import { edit, noop } from '../util.js';
+import block from './block.js';
 
 /**
  * Inline-Level Grammar

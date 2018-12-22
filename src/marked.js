@@ -1,8 +1,8 @@
-import Lexer from './lexer';
-import Parser from './parser';
-import Renderer from './renderer';
-import InlineLexer from './inlineLexer';
-import TextRenderer from './textRenderer';
+import Lexer from './lexer.js';
+import Parser from './parser.js';
+import Renderer from './renderer.js';
+import InlineLexer from './inlineLexer.js';
+import TextRenderer from './textRenderer.js';
 
 const marked = function marked(src, opt, callback) {
   // throw error in case of non string input

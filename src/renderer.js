@@ -1,5 +1,5 @@
-import { escape, unescape, resolveUrl, originIndependentUrl } from './util';
 import marked from './marked';
+import { escape, unescape, resolveUrl, originIndependentUrl } from './util.js';
 
 /**
  * Renderer

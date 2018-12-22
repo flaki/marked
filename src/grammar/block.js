@@ -1,4 +1,4 @@
-import { edit, noop } from '../util';
+import { edit, noop } from '../util.js';
 
 /**
  * Block-Level Grammar

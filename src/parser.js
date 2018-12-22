@@ -1,8 +1,8 @@
-import Renderer from './renderer';
-import InlineLexer from './inlineLexer';
-import TextRenderer from './textRenderer';
-import { unescape } from './util';
 import marked from './marked';
+import Renderer from './renderer.js';
+import InlineLexer from './inlineLexer.js';
+import TextRenderer from './textRenderer.js';
+import { unescape } from './util.js';
 
 /**
  * Parsing & Compiling

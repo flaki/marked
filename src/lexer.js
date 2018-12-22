@@ -1,6 +1,6 @@
-import { splitCells, rtrim } from './util';
-import block from './grammar/block';
 import marked from './marked';
+import { splitCells, rtrim } from './util.js';
+import block from './grammar/block.js';
 
 /**
  * Expose Block Rules
