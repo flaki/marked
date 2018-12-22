@@ -1,7 +1,7 @@
-import marked from './marked';
 import { escape } from './util.js';
 import Renderer from './renderer.js';
 import inline from './grammar/inline.js';
+import { defaults } from './defaults.js';
 
 export const rules = inline;
 
@@ -10,7 +10,7 @@ export const rules = inline;
  */
 export default class InlineLexer {
   constructor(links, options) {
-    this.options = options || marked.defaults;
+    this.options = options || defaults;
     this.links = links;
     this.rules = inline.normal;
     this.renderer = this.options.renderer || new Renderer();

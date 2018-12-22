@@ -1,6 +1,6 @@
-import marked from './marked';
 import { splitCells, rtrim } from './util.js';
 import block from './grammar/block.js';
+import { defaults } from './defaults.js';
 
 /**
  * Expose Block Rules
@@ -14,7 +14,7 @@ export default class Lexer {
   constructor(options) {
     this.tokens = [];
     this.tokens.links = Object.create(null);
-    this.options = options || marked.defaults;
+    this.options = options || defaults;
     this.rules = block.normal;
 
     if (this.options.pedantic) {

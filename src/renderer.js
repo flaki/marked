@@ -1,12 +1,12 @@
-import marked from './marked';
 import { escape, unescape, resolveUrl, originIndependentUrl } from './util.js';
+import { defaults } from './defaults.js';
 
 /**
  * Renderer
  */
 export default class Renderer {
   constructor(options) {
-    this.options = options || marked.defaults;
+    this.options = options || defaults;
   }
 
   code(code, lang, escaped) {

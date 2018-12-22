@@ -3,6 +3,7 @@ import Parser from './parser.js';
 import Renderer from './renderer.js';
 import InlineLexer from './inlineLexer.js';
 import TextRenderer from './textRenderer.js';
+import { defaults } from './defaults.js';
 
 const marked = function marked(src, opt, callback) {
   // throw error in case of non string input
@@ -96,29 +97,7 @@ const marked = function marked(src, opt, callback) {
   }
 };
 
-marked.getDefaults = function() {
-  return {
-    baseUrl: null,
-    breaks: false,
-    gfm: true,
-    headerIds: true,
-    headerPrefix: '',
-    highlight: null,
-    langPrefix: 'language-',
-    mangle: true,
-    pedantic: false,
-    renderer: null,
-    sanitize: false,
-    sanitizer: null,
-    silent: false,
-    smartLists: false,
-    smartypants: false,
-    tables: true,
-    xhtml: false
-  };
-};
-
-marked.defaults = marked.getDefaults();
+marked.defaults = defaults;
 marked.Parser = Parser;
 marked.Renderer = Renderer;
 marked.Lexer = Lexer;

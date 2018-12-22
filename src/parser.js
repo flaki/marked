@@ -1,8 +1,8 @@
-import marked from './marked';
 import Renderer from './renderer.js';
 import InlineLexer from './inlineLexer.js';
 import TextRenderer from './textRenderer.js';
 import { unescape } from './util.js';
+import { defaults } from './defaults.js';
 
 /**
  * Parsing & Compiling
@@ -11,7 +11,7 @@ export default class Parser {
   constructor(options) {
     this.tokens = [];
     this.token = null;
-    this.options = options || marked.defaults;
+    this.options = options || defaults;
     this.options.renderer = this.options.renderer || new Renderer();
     this.renderer = this.options.renderer;
     this.renderer.options = this.options;
